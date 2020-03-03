@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Дипломный проект</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link href="fonts/iconfont/material-icons.css" rel="stylesheet">
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/slick.min.js"></script>
+	<script src="libs/jquery.inputmask.min.js"></script>
+	<script src="libs/jquery.validate.min.js"></script>
+	<script src="script/script.js"></script>
+</head>
+
+<body>
+	<div class="popup-container">
+		<form class="form" method="POST">
+			<button class="form__close-btn"></button>
+			<p class="form__title">Обратная связь</p>
+			<input type="hidden" name="admin_emale" value="dima5620g@gmail.com">
+			<input type="hidden" name="form_subject" value="Тема">
+			<input type="hidden" name="project_name" value="Тест">
+			<input class="form__name" type="text" name="name" placeholder="*Ваше имя">
+			<input class="form__tel" type="tel" name="phone" placeholder="*Номер телефона">
+			<textarea class="form__message" name="message" placeholder="*Оставить сообщение"></textarea>
+			<button class="form__submit" type="submit">Отправить</button>
+		</form>
+	</div>
+	<header class="header">
+		<div class="header__container container">
+			<button class="header__menu-button"></button>
+			<nav class="header__nav nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="#">Услуги</a></li>
+					<li class="nav__item"><a class="nav__link nav__item_active" href="#">Портфолио</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Стоймость</a></li>
+				</ul>
+			</nav>
+			<a href="tel:+74999955577" class="header__tel">+7 (499) 995-55-77</a>
+			<button class="header__call-btn call-btn">Заказать звонок</button>
+		</div>
+	</header>
+	<main>
+		<section class="first-section">
+			<span class="first-section__symbol-5 symbol anim">{ }</span>
+			<div class="first-section__container container">
+				<div class="first-section__personal personal">
+					<h1 class="personal__name">Дмитрий Алексеев</h1>
+					<p class="personal__prof">Frontend-разработчик и&nbsp;веб&#8209;верстальщик</p>
+					<button class="personal__btn btn">Узнать больше</button>
+				</div>
+				<picture class="first-section__photo">
+					<source media="(max-width: 400px)" srcset="img/photo-540.png">
+					<img src="img/photo.png" alt="photo" aria-hidden="true">
+				</picture>
+				<svg class="first-section__svg">
+					<linearGradient id="linear-gradient" gradientTransform="rotate(-70, .5, .5)">
+						<stop offset="0%" stop-color="#ff8f5a" />
+						<stop offset="100%" stop-color="#ff2f96" />
+					</linearGradient>
+					<path fill="url(#linear-gradient)" stroke="none" d="M18 630
+							C -110 485, 420 -295, 810 124
+							V 630
+							H 18">
+					</path>
+				</svg>
+				<span class="first-section__symbol-1 symbol anim">&lt;div&gt;</span>
+				<span class="first-section__symbol-2 symbol anim">&lt;div&gt;</span>
+				<span class="first-section__symbol-3 symbol anim">&lt;/&gt;</span>
+				<span class="first-section__symbol-4 symbol anim">#</span>
+			</div>
+		</section>
+		<section class="second-section">
+			<div class="second-section__container container">
+				<h2 class="second-section__title title">Что я делаю</h2>
+				<div class="second-section__skills skills">
+					<div class="skills__item"><img src="img/skill1.png" alt="HTML coding">
+						<div class="skills__subtitle">Вёрстка&nbsp;лендинг&#8209;страниц
+							и&nbsp;сайтов&nbsp;любой&nbsp;сложности</div>
+					</div>
+					<div class="skills__item"><img src="img/skill2.png" alt="responsive">
+						<div class="skills__subtitle">Адаптивная&nbsp;вёрстка&nbsp;под&nbsp;все
+							браузеры и устройства</div>
+					</div>
+					<div class="skills__item"><img src="img/skill3.png" alt="programming">
+						<div class="skills__subtitle">Frontend–разработка
+							и&nbsp;программирование</div>
+					</div>
+					<div class="skills__item"><img src="img/skill4.png" alt="coding">
+						<div class="skills__subtitle">Исправление&nbsp;и&nbsp;доработка
+							существующей вёрстки</div>
+					</div>
+				</div>
+				<button class="second-section__btn btn">Узнать стоимость</button>
+			</div>
+		</section>
+		<section class="third-section">
+			<div class="third-section__container container">
+				<h2 class="third-section__title title">Примеры моих работ</h2>
+				<div class="third-section__slider slider">
+					<a href="#" class="slider__item"><img src="img/example_1.jpg" alt="psychologist website">
+						<div class="slider__subtitle">Сайт психолога Веры Антоновой</div>
+					</a>
+					<a href="#" class="slider__item"><img src="img/example_2.jpg" alt="clothing website">
+						<div class="slider__subtitle">Сайт магазина детской одежды</div>
+					</a>
+					<a href="#" class="slider__item"><img src="img/example_3.jpg" alt="fishing website">
+						<div class="slider__subtitle">Сайт магазина «Рыболов»</div>
+					</a>
+				</div>
+				<button type="button" class="third-section__prev-btn arrow"></button>
+				<button type="button" class="third-section__next-btn arrow"></button>
+				<button class="third-section__btn btn">Заказать проект</button>
+			</div>
+		</section>
+		<section class="fourth-section">
+			<span class="fourth-section__symbol-1 symbol_sect-4 anim_sect-4">{ }</span>
+			<span class="fourth-section__symbol-2 symbol_sect-4 anim_sect-4">&lt;div&gt;</span>
+			<span class="fourth-section__symbol-3 symbol_sect-4 anim_sect-4">&lt;/&gt;</span>
+			<span class="fourth-section__symbol-4 symbol_sect-4 anim_sect-4">#</span>
+			<span class="fourth-section__symbol-5 symbol_sect-4 anim_sect-4">{ }</span>
+			<div class="fourth-section__container">
+				<h2 class="fourth-section__title">Адаптивная вёрстка под все устройства
+					и&nbsp;браузеры&nbsp;от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h2>
+				<div class="fourth-section__subtitle">* Срок и стоимость могут отличаться от заявленных и рассчитываются
+					индивидуально, взависимости от&nbsp;сложности&nbsp;задач.</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__container container">
+				<nav class="footer__nav nav">
+					<ul class="nav__list">
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer" href="#">Услуги</a>
+						</li>
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer"
+								href="#">Портфолио</a></li>
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer"
+								href="#">Стоймость</a></li>
+					</ul>
+				</nav>
+				<div class="footer__contacts">
+					<a class="footer__contacts-link" href="tel:+74999955577">
+						<i class="material-icons">phone</i>+7 (499) 995-77-55</a>
+					<a class="footer__contacts-link" href="mailto:dmitry@alekseev.com"><i
+							class="material-icons">email</i>dmitry@alekseev.com</a>
+				</div>
+				<div class="footer__feedback">
+					<button class="footer__call-btn call-btn">Заказать звонок</button>
+					<div class="footer__social">
+						<a class="footer__vk" href="#"></a>
+						<a class="footer__fb" href="#"></a>
+						<a class="footer__tw" href="#"></a>
+						<a class="footer__inst" href="#"></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copy-right">© Дмитрий Алексеев, 2016 – 2018</div>
+		</footer>
+	</main>
+</body>
+
+</html>
