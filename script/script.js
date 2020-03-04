@@ -47,6 +47,18 @@ $(document).ready(function(){
 		],
 		
 	});
+	
+	$('.nav__link').on('click', function(event){
+		event.preventDefault();
+		let href = $(this).attr('href');
+		let offset = $(href).offset().top;
+		$('body,html').animate({
+			scrollTop: offset,
+		}, 700);
+		
+		
+	});
+
 	$('.header__menu-button')
 		.click(function(){
 			if ($('.header__nav').css('display') == 'none' && $(window).width() <= '1024'){
