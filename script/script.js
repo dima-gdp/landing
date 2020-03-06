@@ -59,6 +59,11 @@ $(document).ready(function(){
 		
 	});
 
+	$('.header__nav .nav__link').on('click', function(){
+		$('.header__nav .nav__link').removeClass('nav__item_active');
+		$(this).addClass('nav__item_active');
+	});
+
 	$('.header__menu-button')
 		.click(function(){
 			if ($('.header__nav').css('display') == 'none' && $(window).width() <= '1024'){
