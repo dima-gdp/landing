@@ -757,7 +757,9 @@ transition: transform 0.7s ease, -webkit-transform 0.7s ease;
 }
 
 .form {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 100%);
   box-sizing: border-box;
   position: absolute;
@@ -774,6 +776,10 @@ transition: transform 0.7s ease, -webkit-transform 0.7s ease;
 .form * {
   box-sizing: border-box;
 }
+.form__container {
+  position: relative;
+}
+
 .form__title {
   font-size: 40px;
   margin: 0 auto 30px;
@@ -823,7 +829,7 @@ transition: transform 0.7s ease, -webkit-transform 0.7s ease;
   width: 205px;
   height: 50px;
   font-size: 18px;
-  margin: 0 auto 30px;
+  margin: 0 auto 0;
   display: block;
   outline: none;
   background-color: #ff4e2e;
@@ -885,6 +891,21 @@ transition: transform 0.7s ease, -webkit-transform 0.7s ease;
   transition: border 0.7s ease;
   border: 2px solid rgba(251, 255, 44, 0.87);
 }
+
+.form__container .material-icons {
+  display: none;
+}
+.form__done {
+  position: absolute;
+  right: 5px;
+  bottom: 14px;
+  display: none;
+  color: rgb(37, 219, 37);
+  margin: 0;
+}
+
+
+
 
 @media (max-width: 1366px) {
   .personal__name {
@@ -1679,3 +1700,4 @@ transition: transform 0.7s ease, -webkit-transform 0.7s ease;
   transition: transform 0.7s ease;
   transition: transform 0.7s ease, -webkit-transform 0.7s ease;
  }
+

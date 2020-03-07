@@ -25,14 +25,18 @@
 	<div class="popup-container">
 		<form class="form" method="POST">
 			<button class="form__close-btn"></button>
-			<p class="form__title">Обратная связь</p>
-			<input type="hidden" name="admin_email" value="dima5620g@gmail.com">
-			<input type="hidden" name="form_subject" value="Тема">
-			<input type="hidden" name="project_name" value="Тест">
-			<input class="form__name" type="text" name="name" placeholder="*Ваше имя">
-			<input class="form__tel" type="tel" name="phone" placeholder="*Номер телефона">
-			<textarea class="form__message" name="message" placeholder="*Оставить сообщение"></textarea>
-			<button class="form__submit" type="submit">Отправить</button>
+			<div class="form__container">
+				
+				<p class="form__title">Обратная связь</p>
+				<input type="hidden" name="admin_email" value="dima5620g@gmail.com">
+				<input type="hidden" name="form_subject" value="Тема">
+				<input type="hidden" name="project_name" value="Тест">
+				<input class="form__name" type="text" name="name" placeholder="*Ваше имя">
+				<input class="form__tel" type="tel" name="phone" placeholder="*Номер телефона">
+				<textarea class="form__message" name="message" placeholder="*Оставить сообщение"></textarea>
+				<button class="form__submit" type="submit">Отправить</button>
+				<i class="material-icons form__done">done_all</i>
+			</div>
 		</form>
 	</div>
 	<header class="header">
@@ -40,8 +44,8 @@
 			<button class="header__menu-button"></button>
 			<nav class="header__nav nav">
 				<ul class="nav__list">
-					<li class="nav__item"><a class="nav__link" href="#uslugi">Услуги</a></li>
-					<li class="nav__item"><a class="nav__link nav__item_active" href="#portfolio">Портфолио</a></li>
+					<li class="nav__item"><a class="nav__link" href="#services">Услуги</a></li>
+					<li class="nav__item"><a class="nav__link" href="#portfolio">Портфолио</a></li>
 					<li class="nav__item"><a class="nav__link" href="#price">Стоймость</a></li>
 				</ul>
 			</nav>
@@ -79,7 +83,7 @@
 				<span class="first-section__symbol-4 symbol anim">#</span>
 			</div>
 		</section>
-		<section class="second-section" id="uslugi">
+		<section class="second-section" id="services">
 			<div class="second-section__container container">
 				<h2 class="second-section__title title">Что я делаю</h2>
 				<div class="second-section__skills skills">
@@ -139,7 +143,7 @@
 			<div class="footer__container container">
 				<nav class="footer__nav nav">
 					<ul class="nav__list">
-						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer" href="#uslugi">Услуги</a>
+						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer" href="#services">Услуги</a>
 						</li>
 						<li class="nav__item nav__item_footer"><a class="nav__link nav__link_footer"
 								href="#portfolio">Портфолио</a></li>

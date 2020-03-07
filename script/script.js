@@ -99,6 +99,7 @@ $(document).ready(function(){
 
 	$('.form__close-btn').click(function(){
 		$('.popup-container').fadeOut(500, disableScroll);
+		$('.form__done').css('display', 'none');
 		return false;
 
 	})
@@ -124,6 +125,7 @@ $(document).ready(function(){
 	$('.popup-container').click(function(event){
 		if(event.target == this) {
 			$(this).fadeOut(500, disableScroll);
+			$('.form__done').css('display', 'none');
 		}
 	});
 
@@ -163,13 +165,17 @@ $(document).ready(function(){
 			data: th.serialize(),
 			
 		}).done(() => {
-			console.log('отправлено')
+			$('.form__done').fadeIn();
 			th.trigger('reset');
 		});
 
 		return false;
 		}
 	});
+	});
+
+	$('.form__tel, .form__message, .form__name').click(function(){
+		$('.form__done').css('display', 'none');
 	});
 
 
